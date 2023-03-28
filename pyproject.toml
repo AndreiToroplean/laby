@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "laby"
+version = "0.1.0"
+description = ""
+authors = ["Andrei Toroplean <60916097+AndreiToroplean@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+windows-curses = "^2.3"
+laby-api = {git = "https://github.com/AndreiToroplean/laby-api.git"}
+
+
+[tool.poetry.scripts]
+game = "laby:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
